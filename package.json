@@ -1,0 +1,16 @@
+{
+  "name": "jovis_newsletter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/browser-sync/dist/bin.js start --config scripts/browser-sync.js"
+ 
+ },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^3.0.2"
+  }
+}
