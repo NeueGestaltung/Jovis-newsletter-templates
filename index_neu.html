@@ -140,7 +140,7 @@
             margin: 0;
         }
         .email__block-meta {
-            color: #666666;
+            color: #000000;
             margin: 0 0 10px 0;
             font-size: 21px;   
             line-height: 30px;
@@ -148,7 +148,7 @@
         }
         .email__block-desc {
             font-size: 21px;
-            color: #666666;
+            color: #000000;
             margin: 0 0 10px 0;
             line-height: 30px;
 
@@ -170,13 +170,34 @@
             font-size: 21px;
             font-family: 'Courier New', Courier, monospace;
         }
+
+        .roundButton--blue {
+            background-color: #D0D8DB;
+            color: #000000;
+        }
+
+        .roundButton--transparent {
+            color: #000000;
+            background-color: transparent;
+            border: 1px solid #000000;
+        }
+
+
+
+        .roundButton:hover {
+            background-color: #000000; /* Darker shade for hover */
+            color: #ffffff;
+        }
+
         .email__footer-text {
             font-size: 21px;
-            color: #666666;
+
+            color: #000000;
+            line-height: 30px;
             margin: 20px 0;
         }
         .email__footer-text a {
-            color: #666666;
+            color: #000000;
             text-decoration: none;
             width: 100%;
             display: block;
@@ -247,17 +268,16 @@
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="email__body">
 
                         <tr>
-                            <td style="padding-left: 20px; padding-right: 20px;">
+                            <td style="padding-left: 20px; padding-right: 20px; padding-bottom: 80px;">
                                 <h2 class="email__body-title" style="text-align: center;">Neue Bücher</h1>
-
-
                                 <div class="email__block email__block--transparent">
                                     <img src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img">
                                     <img src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/c4896a52-65fc-2051-78fb-7176356fe532.png" alt="Book Cover" class="email__block-img">
                                     <h3 class="email__block-title--small">Olympia München ‘72</h3>
                                     <p class="email__block-meta">Architektur+Landschaft als gebaute Utopie<br>Elisabeth Spieker<br>ISBN 978-3-98612-002-3<br>€ 38,00</p>
                                     <p class="email__block-desc">Heiter, spielerisch, leicht – das waren die Leitmotive fur die Architektur der Olympischen Sommerspiele in München 1972, die eine neue hoffnungsvolle Epoche der jungen Bonner Republik verkörpern sollte...</p>
-                                    <a class="roundButton" href="https://www.jovis.de/de/publisher/open-access">Jetzt Kaufen</a>                                 
+                                    <div class='universalSpacer universalSpacer--small' height="20">&nbsp;</div>
+                                    <a class="roundButton roundButton--transparent" href="https://www.jovis.de/de/publisher/open-access">Jetzt Kaufen</a>                                 
                                 </div>
 
                                 <hr>
@@ -268,7 +288,8 @@
                                     <h3 class="email__block-title--small">Olympia München ‘72</h3>
                                     <p class="email__block-meta">Architektur+Landschaft als gebaute Utopie<br>Elisabeth Spieker<br>ISBN 978-3-98612-002-3<br>€ 38,00</p>
                                     <p class="email__block-desc">Heiter, spielerisch, leicht – das waren die Leitmotive fur die Architektur der Olympischen Sommerspiele in München 1972, die eine neue hoffnungsvolle Epoche der jungen Bonner Republik verkörpern sollte...</p>
-                                    <a class="roundButton" href="https://www.jovis.de/de/publisher/open-access">Jetzt Kaufen</a>                                 
+                                    <div class='universalSpacer universalSpacer--small' height="20">&nbsp;</div>
+                                    <a class="roundButton roundButton--transparent" href="https://www.jovis.de/de/publisher/open-access">Jetzt Kaufen</a>                                 
                                 </div>
                                 
                                 <hr>
@@ -279,7 +300,7 @@
                                     <p class="email__block-meta">Architektur+Landschaft als gebaute Utopie<br>Elisabeth Spieker<br>ISBN 978-3-98612-002-3<br>€ 38,00</p>
                                     <p class="email__block-desc">Heiter, spielerisch, leicht – das waren die Leitmotive fur die Architektur der Olympischen Sommerspiele in München 1972, die eine neue hoffnungsvolle Epoche der jungen Bonner Republik verkörpern sollte...</p>
                                     <div class='universalSpacer universalSpacer--small' height="20">&nbsp;</div>
-                                    <a class="roundButton" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Jetzt Kaufen</a>
+                                    <a class="roundButton roundButton--transparent" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Jetzt Kaufen</a>
                                 </div>
                                 <div class="email__block email__block--yellow email__block--centered">
                                     <img src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img">
@@ -287,7 +308,7 @@
                                     <p class="email__block-meta">Architektur+Landschaft als gebaute Utopie<br>Elisabeth Spieker<br>ISBN 978-3-98612-002-3<br>€ 38,00</p>
                                     <p class="email__block-desc">Heiter, spielerisch, leicht – das waren die Leitmotive fur die Architektur der Olympischen Sommerspiele in München 1972, die eine neue hoffnungsvolle Epoche der jungen Bonner Republik verkörpern sollte...</p>
                                     <div class='universalSpacer universalSpacer--small' height="20">&nbsp;</div>
-                                    <a class="roundButton" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Jetzt Kaufen</a>
+                                    <a class="roundButton roundButton--transparent" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Jetzt Kaufen</a>
                                 </div>
                                 <div class="email__block email__block--blue email__block--centered">
                                     <img src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img">
@@ -295,9 +316,17 @@
                                     <p class="email__block-meta">Architektur+Landschaft als gebaute Utopie<br>Elisabeth Spieker<br>ISBN 978-3-98612-002-3<br>€ 38,00</p>
                                     <p class="email__block-desc">Heiter, spielerisch, leicht – das waren die Leitmotive fur die Architektur der Olympischen Sommerspiele in München 1972, die eine neue hoffnungsvolle Epoche der jungen Bonner Republik verkörpern sollte...</p>                        
                                     <div class='universalSpacer universalSpacer--small' height="20">&nbsp;</div>
-                                    <a class="roundButton" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Jetzt Kaufen</a> 
+                                    <a class="roundButton roundButton--transparent" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Jetzt Kaufen</a> 
                                 </div>
                                 <!-- Repeat for other books -->
+                                
+                                
+                                
+                                <!-- Testbutton -->
+                                <a class="roundButton roundButton--transparent" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Testbutton</a> 
+
+
+
                             </td>
                         </tr>
 
@@ -311,10 +340,10 @@
 
                         <tr>
                             <td class="email__footer-buttons">
-                                <a class="roundButton" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Alle Bücher</a>
-                                <a class="roundButton" href="https://www.jovis.de/de/publisher/catalog">Unser Katalog</a>
-                                <a class="roundButton" href="https://www.jovis.de/de/publisher/open-access">Open Access</a>
-                                <a class="roundButton" href="https://www.jovis.de/de/publisher/about-us">Verlag</a>
+                                <a class="roundButton roundButton--blue" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Alle Bücher</a>
+                                <a class="roundButton roundButton--blue" href="https://www.jovis.de/de/publisher/catalog">Unser Katalog</a>
+                                <a class="roundButton roundButton--blue" href="https://www.jovis.de/de/publisher/open-access">Open Access</a>
+                                <a class="roundButton roundButton--blue" href="https://www.jovis.de/de/publisher/about-us">Verlag</a>
                             </td>
                         </tr>
 
@@ -339,6 +368,11 @@
                                 Alle Rechte vorbehalten.
                             </td>
                         </tr>
+
+                        <tr>
+                            <td class="universalSpacer universalSpacer--medium" height="40">&nbsp;</td>
+                        </tr>
+
                     </table>
                 </td>
             </tr>
