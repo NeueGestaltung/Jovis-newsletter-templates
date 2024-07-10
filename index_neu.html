@@ -14,6 +14,9 @@
             background-color: #D0D8DB;
         }
 
+
+        /* FONTS */
+
         h1 {
             font-weight: 300;
         }
@@ -22,7 +25,28 @@
             font-weight: 300;
             font-size:40px;
         }
+        
+        h3 {
+            font-weight: bold;
+        }
 
+        
+        
+        /* BASIC ELEMENTS */
+
+        .universalSpacer {
+            padding-top: 20px;
+        }
+
+        .universalSpacer--medium {
+            padding-top: 40px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 2px solid #000; /* Solid black line */
+            margin: 60px 0; /* Optional: Adjusts spacing around the HR */
+        }
         table {
             border-collapse: collapse;
             width: 100%;
@@ -51,9 +75,9 @@
         .email__header {
             background: url('https://yourgifurl.com/yourimage.gif') no-repeat center center;
             background-size: cover;
-            height: 440px;
+            height: 600px;
             text-align: center;
-            color: #ffffff;
+            background-color: #bac6cb;
             font-size: 24px;
             font-weight: bold;
             line-height: 200px;
@@ -75,8 +99,13 @@
         
         .email__block {
             margin-bottom: 20px;
-            text-align: center;
+            text-align: left;
             border-radius: 20px;
+            padding: 80px 20px;
+        }
+
+        .email__block--centered  {
+            text-align: center;
         }
 
         .email__block--blue {
@@ -91,6 +120,10 @@
             background-color: #E6E2DA;
         }
 
+        .email__block--transparent {
+            background-color: transparent;
+        }
+
         .email__block-img {
             max-width: 300px;
             display: block;
@@ -101,23 +134,32 @@
             font-size: 40px;
             color: #333333;
         }
+        .email__block-title--small {
+            font-size: 21px;
+            color: #333333;
+            margin: 0;
+        }
         .email__block-meta {
-            font-size: 14px;
             color: #666666;
             margin: 0 0 10px 0;
-            font-weight: bold;
+            font-size: 21px;   
+            line-height: 30px;
+
         }
         .email__block-desc {
-            font-size: 14px;
+            font-size: 21px;
             color: #666666;
             margin: 0 0 10px 0;
+            line-height: 30px;
+
         }
         .email__footer {
             padding: 20px;
             background-color: #f4f4f4;
             text-align: center;
+            font-family: 'Courier New', Courier, monospace;
         }
-        .email__footer-buttons a {
+        .roundButton {
             display: inline-block;
             margin: 0 10px;
             padding: 10px 20px;
@@ -125,10 +167,11 @@
             background-color: #000000;
             border-radius: 50px;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 21px;
+            font-family: 'Courier New', Courier, monospace;
         }
         .email__footer-text {
-            font-size: 14px;
+            font-size: 21px;
             color: #666666;
             margin: 20px 0;
         }
@@ -155,38 +198,104 @@
         <table border="0" cellpadding="0" cellspacing="0" class="email" id="bodyTable">
             <tr>
                 <td align="center" valign="top" id="bodyCell">
+
                     <!-- Header -->
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="email__header" style="background-image: url('https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/890a8234-f6ae-f91e-34eb-46f595df01c1.gif'); background-size: 100% 100%; background-position: center;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="email__header">
                         <tr>
-                            <td class="email__header-content">
-                                <h2 class="email__header-content--headline" >Juni</h2>
+                            <td>
+                                <!-- First table for the Lovis header logo -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td align="center" style="padding-top: 24px;">
+                                            <img alt="Lovis Logo black" src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/8af64a0f-1b66-e08f-3c2f-7eb961a650bd.png" class="email__header-templateLogo">
+                                        </td>
+                                    </tr>
+                                </table>
                             </td>
-                            <img alt="Jovis Logo black" src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/8af64a0f-1b66-e08f-3c2f-7eb961a650bd.png" class="email__header-templateLogo" align="middle" style="padding-top: 24px;">
+                        </tr>
+                        <tr>
+                            <td>
+                                <!-- Second table for the content below the logo -->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" >
+                                    <tr>
+                                        <td align="center">
+                                            <!-- Responsive square container -->
+                                            <div style="width: 100%; max-width: 500px; margin: 0 auto;">
+                                                <!-- The square: The padding-top of 100% makes it a square -->
+                                                <div style="padding-top: 100%;  position: relative;">
+                                                    <!-- Content inside the square -->
+                                                    <div style="position: absolute; top: 0; background-repeat: no-repeat; left: 0; bottom: 0; right: 0; background-image: url('https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/890a8234-f6ae-f91e-34eb-46f595df01c1.gif'); background-size: 100%; background-position: center;">
+                                                        <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+                                                            <tr>
+                                                                <td align="center" valign="middle" style="text-align: center;">
+                                                                    <!-- Your content here -->
+                                                                    <h2 class="email__header-content--headline">Juni</h2>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
                         </tr>
                     </table>
+
                     <!-- Body -->
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="email__body">
 
                         <tr>
                             <td style="padding-left: 20px; padding-right: 20px;">
                                 <h2 class="email__body-title" style="text-align: center;">Neue Bücher</h1>
-                                <div class="email__block email__block--red">
-                                    <h2 class="email__block-title">Olympia München ‘72</h2>
+
+
+                                <div class="email__block email__block--transparent">
                                     <img src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img">
+                                    <img src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/c4896a52-65fc-2051-78fb-7176356fe532.png" alt="Book Cover" class="email__block-img">
+                                    <h3 class="email__block-title--small">Olympia München ‘72</h3>
                                     <p class="email__block-meta">Architektur+Landschaft als gebaute Utopie<br>Elisabeth Spieker<br>ISBN 978-3-98612-002-3<br>€ 38,00</p>
                                     <p class="email__block-desc">Heiter, spielerisch, leicht – das waren die Leitmotive fur die Architektur der Olympischen Sommerspiele in München 1972, die eine neue hoffnungsvolle Epoche der jungen Bonner Republik verkörpern sollte...</p>
+                                    <a class="roundButton" href="https://www.jovis.de/de/publisher/open-access">Jetzt Kaufen</a>                                 
                                 </div>
-                                <div class="email__block email__block--yellow">
-                                    <h2 class="email__block-title">Olympia München ‘72</h2>
+
+                                <hr>
+
+                                <div class="email__block email__block--transparent">
                                     <img src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img">
+                                    <img src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/c4896a52-65fc-2051-78fb-7176356fe532.png" alt="Book Cover" class="email__block-img">
+                                    <h3 class="email__block-title--small">Olympia München ‘72</h3>
                                     <p class="email__block-meta">Architektur+Landschaft als gebaute Utopie<br>Elisabeth Spieker<br>ISBN 978-3-98612-002-3<br>€ 38,00</p>
                                     <p class="email__block-desc">Heiter, spielerisch, leicht – das waren die Leitmotive fur die Architektur der Olympischen Sommerspiele in München 1972, die eine neue hoffnungsvolle Epoche der jungen Bonner Republik verkörpern sollte...</p>
+                                    <a class="roundButton" href="https://www.jovis.de/de/publisher/open-access">Jetzt Kaufen</a>                                 
                                 </div>
-                                <div class="email__block email__block--blue">
-                                    <h2 class="email__block-title">Olympia München ‘72</h2>
+                                
+                                <hr>
+
+                                <div class="email__block email__block--red email__block--centered">
                                     <img src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img">
+                                    <h3 class="email__block-title--small">Olympia München ‘72</h3>
                                     <p class="email__block-meta">Architektur+Landschaft als gebaute Utopie<br>Elisabeth Spieker<br>ISBN 978-3-98612-002-3<br>€ 38,00</p>
                                     <p class="email__block-desc">Heiter, spielerisch, leicht – das waren die Leitmotive fur die Architektur der Olympischen Sommerspiele in München 1972, die eine neue hoffnungsvolle Epoche der jungen Bonner Republik verkörpern sollte...</p>
+                                    <div class='universalSpacer universalSpacer--small' height="20">&nbsp;</div>
+                                    <a class="roundButton" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Jetzt Kaufen</a>
+                                </div>
+                                <div class="email__block email__block--yellow email__block--centered">
+                                    <img src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img">
+                                    <h3 class="email__block-title--small">Olympia München ‘72</h3>
+                                    <p class="email__block-meta">Architektur+Landschaft als gebaute Utopie<br>Elisabeth Spieker<br>ISBN 978-3-98612-002-3<br>€ 38,00</p>
+                                    <p class="email__block-desc">Heiter, spielerisch, leicht – das waren die Leitmotive fur die Architektur der Olympischen Sommerspiele in München 1972, die eine neue hoffnungsvolle Epoche der jungen Bonner Republik verkörpern sollte...</p>
+                                    <div class='universalSpacer universalSpacer--small' height="20">&nbsp;</div>
+                                    <a class="roundButton" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Jetzt Kaufen</a>
+                                </div>
+                                <div class="email__block email__block--blue email__block--centered">
+                                    <img src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img">
+                                    <h3 class="email__block-title--small">Olympia München ‘72</h3>
+                                    <p class="email__block-meta">Architektur+Landschaft als gebaute Utopie<br>Elisabeth Spieker<br>ISBN 978-3-98612-002-3<br>€ 38,00</p>
+                                    <p class="email__block-desc">Heiter, spielerisch, leicht – das waren die Leitmotive fur die Architektur der Olympischen Sommerspiele in München 1972, die eine neue hoffnungsvolle Epoche der jungen Bonner Republik verkörpern sollte...</p>                        
+                                    <div class='universalSpacer universalSpacer--small' height="20">&nbsp;</div>
+                                    <a class="roundButton" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Jetzt Kaufen</a> 
                                 </div>
                                 <!-- Repeat for other books -->
                             </td>
@@ -197,20 +306,20 @@
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="email__footer">
 
                         <tr>
-                            <td style="padding-top: 20px;" height="20">&nbsp;</td>
+                            <td class="universalSpacer universalSpacer--small" style="padding-top: 20px;" height="20">&nbsp;</td>
                         </tr>
 
                         <tr>
                             <td class="email__footer-buttons">
-                                <a href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Alle Bücher</a>
-                                <a href="https://www.jovis.de/de/publisher/catalog">Unser Katalog</a>
-                                <a href="https://www.jovis.de/de/publisher/open-access">Open Access</a>
-                                <a href="https://www.jovis.de/de/publisher/about-us">Verlag</a>
+                                <a class="roundButton" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Alle Bücher</a>
+                                <a class="roundButton" href="https://www.jovis.de/de/publisher/catalog">Unser Katalog</a>
+                                <a class="roundButton" href="https://www.jovis.de/de/publisher/open-access">Open Access</a>
+                                <a class="roundButton" href="https://www.jovis.de/de/publisher/about-us">Verlag</a>
                             </td>
                         </tr>
 
                         <tr>
-                            <td style="padding-top: 20px;" height="20">&nbsp;</td>
+                            <td class="universalSpacer universalSpacer--medium" height="40">&nbsp;</td>
                         </tr>
 
                         <tr>
@@ -229,11 +338,6 @@
                                 &copy; 2024 JOVIS Verlag<br>
                                 Alle Rechte vorbehalten.
                             </td>
-
-                            <tr>
-                                <td style="padding-top: 20px;" height="20">&nbsp;</td>
-                            </tr>
-
                         </tr>
                     </table>
                 </td>
