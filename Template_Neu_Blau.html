@@ -47,12 +47,10 @@
 		}
 		img{
 			order: 0;
-            height: auto;
-            line-height: 100%;
             outline: none;
             text-decoration: none;
-			max-width:300px;
-			width: 100%;
+			max-width: calc(350px - 48px);
+			height: auto !important;
 		}
 		
 		a img{
@@ -120,7 +118,7 @@
 			background-color:#D0D8DB;
 		}
 		.email__block-img{
-			max-width:300px !important;
+			max-width:calc(350px - 48px) !important;
 			width: 100%;
 			display:block;
 			margin:0 auto 10px auto;
@@ -180,13 +178,14 @@
 
 
 		.email__footer-buttons {
-            padding: 5px; /* Space around the button */
+            padding: 5px !important; /* Space around the button */
             display: inline-block;
+			width: calc(100% - 48px);
         }
         .roundButton {
             display: inline-block;
             padding: 10px 20px;
-			margin:5px;
+			margin:0px;
             font-size: 16px;
             font-family: 'Courier New', Courier, monospace;
             color: #1C1C21;
@@ -216,12 +215,12 @@
 		}
 
 		.email__content-buttons{
-            padding: 5px; /* Space around the button */
+            padding: 5px !important; /* Space around the button */
             display: block;
         }
 
 		.roundButton--transparent{
-			margin:5px;
+			margin:0px;
 			color:#1C1C21;
 			background-color:transparent;
 			border:1px solid #1C1C21;
@@ -245,22 +244,108 @@
 			margin: 0;
 			padding: 0;
 		}
+
 	@media screen and (max-width: 525px){
 		.email__footer-buttons{
-			width:100%;
+			width: calc(100% - 48px);
 		}
-}	
+	} 	@media only screen and (max-width: 599px) and (min-width: 400px) {
+		#templateHeader{
+			display:block;
+			width: 100%;
+			height:400px !important;
+			background: url(https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/890a8234-f6ae-f91e-34eb-46f595df01c1.gif);
+			background-image: url(https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/890a8234-f6ae-f91e-34eb-46f595df01c1.gif);
+			background-repeat: no-repeat;
+			background-position: 50% 70% !important;
+			background-size: 380px !important;
+		}
+
+	}	@media only screen and (max-width: 399px){
+		#templateHeader{
+			display:block;
+			width: 100%;
+			height:300px !important;
+			background: url(https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/890a8234-f6ae-f91e-34eb-46f595df01c1.gif);
+			background-image: url(https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/890a8234-f6ae-f91e-34eb-46f595df01c1.gif);
+			background-repeat: no-repeat;
+			background-position: 50% 75% !important;
+			background-size: 270px !important;
+		}
+
+
+	} 	@media only screen and (max-width: 599px) and (min-width: 400px) {
+		#templateHeader .templateLogo {
+			height: 32px !important;
+		}
+
+	} 	@media only screen and (max-width:599px){
+		#templateHeader .templateLogo {
+			height: 32px !important;
+			width: auto;
+			display: block;
+			text-align:center !important;
+			justify-content:center !important;
+			align-items: center !important;
+			margin: 0 auto !important;
+		}
+
+	} 	@media only screen and (max-width: 599px) and (min-width: 400px){
+		.email__header{
+			background:url('https://yourgifurl.com/yourimage.gif') no-repeat center center;
+			background-size:cover;
+			height:400px!important;
+			text-align:center;
+			background-color:#bac6cb;
+			background-repeat: no-repeat;
+			font-size:24px;
+			font-weight:bold;
+			line-height:360px!important;;
+		}
+
+	} 	@media only screen and (max-width: 399px){
+		.email__header{
+			background:url('https://yourgifurl.com/yourimage.gif') no-repeat center center;
+			background-size:cover;
+			height:270px!important;
+			text-align:center;
+			background-color:#bac6cb;
+			background-repeat: no-repeat;
+			font-size:21px;
+			font-weight:bold;
+			line-height:280px!important;
+		}
+	}	@media only screen and (max-width: 599px) and (min-width: 400px){
+
+			h1{
+				font-weight:300;
+				font-size:32px;
+				color:#1C1C21;
+			}
+
+	}	@media only screen and (max-width: 399px){
+
+		h1{
+			font-weight:300;
+			font-size:24px;
+			color:#1C1C21;
+		}
+
+	}
 
 </style></head>
 <body>
     <center>
+		<!-- main body table -->
         <table border="0" cellpadding="0" cellspacing="0" class="email" id="bodyTable" style="max-width: 1000px !important; margin: 0 auto;">
             <tr>
                 <td align="center" valign="top" id="bodyCell">
-                    <!-- Header -->
+
+                    <!-- Header Section -->
                     <table border="0" cellpadding="0" cellspacing="0" width="100" class="email__header" style="max-width: 1000px; margin: 0 auto;">
                         <tr>
                             <td>
+
                                 <!-- First table for the Jovis header logo -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100" style="max-width: 1000px !important; margin: 0 auto;">
                                     <tr>
@@ -269,25 +354,31 @@
                                         </td>
                                     </tr>
                                 </table>
+
                             </td>
                         </tr>
                         <tr>
                             <td>
+
                                 <!-- Second table for the content below the logo -->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100" style="max-width: 1000px; margin: 0 auto;">
                                     <tr>
                                         <td align="center">
+
                                             <!-- Responsive square container using tables -->
                                             <table border="0" cellpadding="0" cellspacing="0" width="100" style="max-width: 500px; margin: 0 auto;">
                                                 <tr>
                                                     <td style="position: relative; padding-top: 100%;">
+
+														<!-- Month name -->
                                                         <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/890a8234-f6ae-f91e-34eb-46f595df01c1.gif'); background-size: 100%; background-position: center;background-repeat: no-repeat;">
                                                             <tr>
                                                                 <td align="center" valign="middle" style="text-align: center;">
-                                                                    <h2 mc:edit class="email__header-content--headline">Juni</h2>
+                                                                    <h1 mc:edit class="email__header-content--headline">Juni</h1>
                                                                 </td>
                                                             </tr>
                                                         </table>
+
                                                     </td>
                                                 </tr>
                                             </table>
@@ -297,13 +388,14 @@
                             </td>
                         </tr>
                     </table>
-                    <!-- Body -->
+
+                    <!-- Content Block Section -->
                     <table border="0" cellpadding="0" cellspacing="0" width="100" class="email__body" style="max-width: 1000px !important; margin: 0 auto;">
                         <tr>
                             <td class="email__body-header" align="center">
 								
 								<!-- First block headline -->
-								<table border="0" align="center" cellpadding="0" cellspacing="0" width="100" style="max-width: 300px !important; margin: 0 auto;">
+								<table border="0" align="center" cellpadding="0" cellspacing="0" width="100" style="max-width: 1000px !important; margin: 0 auto;">
 									<tr>
 										<td align="center">
 											<h2 mc:edit="h2" class="email__body-title" style="text-align: center;">Neue Bücher</h2>
@@ -313,57 +405,32 @@
 
 
                                 <!-- First book block -->
-                                <table mc:repeatable="content" class="email__block email__block--transparent" width="100" style="max-width: 1000px !important; margin: 0 auto;">
+                                <table mc:repeatable="content" border="0" cellpadding="0" cellspacing="0" width="100%"  class="email__block email__block--transparent" style="max-width: 1000px !important; margin: 0 auto;">
                                     <tr>
                                         <td align="center">
 
 											<!-- block images -->
-											<table border="0" align="center" cellpadding="0" cellspacing="0" width="100" style="max-width: 300px !important; margin: 0 auto;">
+											<table border="0" align="center" cellpadding="0" cellspacing="0" width="width: 100%;" style="max-width: 1000px; margin: 0 auto;">
 												<tr>
 													<td align="center">
+														
+														<img mc:edit="email__block-img-1" src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img" style="width: calc(100% - 48px); height: auto !important; display: block;">
+														
 
-														<!--[if !mso]><!-->
-														<img mc:edit width="300px !important" src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img" style="max-width: 300px !important; width:100%; display: block;">
-														<!--<![endif]-->
-
-														<!--[if mso]>
-														<table width="300" cellpadding="0" cellspacing="0" border="0">
-														<tr>
-														<td>
-														<v:image xmlns:v="urn:schemas-microsoft-com:vml" src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" style="width:300px; height: 100%" />
-														</td>
-														</tr>
-														</table>
-														<![endif]-->
-
-														<table width="100">
+														<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: calc(350px - 48px); margin: 20px auto 0;">
 															<tr>
 																<td height="20">&nbsp;</td>
 															</tr>
 														</table>
 
-														<!--[if !mso]><!-->
-														<img mc:edit width="300px" width="300" line-height="100%" src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/c4896a52-65fc-2051-78fb-7176356fe532.png" alt="Book Cover" class="email__block-img">
-														<!--<![endif]-->
-
-														<!--[if mso]>
-														<table width="300" cellpadding="0" cellspacing="0" border="0">
-														<tr>
-														<td>
-														<v:image xmlns:v="urn:schemas-microsoft-com:vml" src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" style="width:300px; height: 100%" />
-														</td>
-														</tr>
-														</table>
-														<![endif]-->
+														
+														<img mc:edit="email__block-img-2" mc:hideable src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/c4896a52-65fc-2051-78fb-7176356fe532.png" alt="Book Cover" class="email__block-img" style="width: calc(100% - 48px); height: auto !important; display: block;">
+													
 													</td>
-                                                </tr>
+												</tr>
 											</table>
+											
                                            
-                                            <table width="100">
-                                                <tr>
-                                                    <!-- <td height="20">&nbsp;</td> -->
-                                                </tr>
-                                            </table>
 
 											<!-- block text -->
 											<table border="0" cellpadding="0" cellspacing="0" width="100" style="max-width: 1000px !important;; margin: 0 auto;">
@@ -376,21 +443,22 @@
                                                 </tr>
                                             </table>
                                             
-											<table width="100">
+											<table border="0" cellpadding="0" cellspacing="0" width="100" style="max-width: 1000px !important;; margin: 0 auto;">
                                                 <tr>
                                                     <td height="20">&nbsp;</td>
                                                 </tr>
                                             </table>
-											<table cellpadding="0" cellspacing="0" width="100%" >
+
+											<table border="0" cellpadding="0" cellspacing="0" width="100" style="max-width: 1000px !important;; margin: 0 auto;">
                                                 <tr>
-                                                    <td class="email__content-buttons" align="left" left="24px">
+                                                    <td class="email__content-buttons" align="left" style="margin-left: 24px !important;">
 														<!--[if mso]>
 														<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.jovis.de/de/publisher/about-us" style="height:60px; width: 250px; v-text-anchor:middle;width:auto; padding:10px 10px 10px 10px;" arcsize="50%" strokecolor="#1C1C21" fillcolor="#D0D8DB">
 															<w:anchorlock/>
 															<center style="color:#1C1C21;font-family:'Courier New', Courier, monospace; font-size:16px;">
 																Alle Bücher
 														<![endif]-->
-														<a mc:edit class="roundButton roundButton--transparent" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC" target="_blank" style="mso-hide:all;margin-left: 24px !important;">Jetzt kaufen</a>
+														<a mc:edit class="roundButton roundButton--transparent" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC" target="_blank" style="mso-hide:all">Jetzt kaufen</a>
 														<!--[if mso]>
 															</center>
 														</v:roundrect>
@@ -399,7 +467,8 @@
 													</td>
                                                 </tr>
                                             </table>
-											<table width="100">
+
+											<table border="0" cellpadding="0" cellspacing="0" width="100" style="max-width: 1000px !important;; margin: 0 auto;">
 												<tr>
 													<td height="80">&nbsp;</td>
 												</tr>
@@ -407,8 +476,10 @@
                                             
                                         </td>
                                     </tr>
+
                                 </table>
                                 <hr mc:hideable>
+
                                 <!-- Repeat book block for other books as needed -->
                                 <table mc:repeatable="content-event" class="email__block email__block--red email__block--centered" width="100" style="text-align: left">
                                     <tr>
@@ -419,12 +490,18 @@
                                                 </tr>
                                             </table>
                                             <h3 mc:hideable mc:edit="h3" class="email__block-title--big">Olympia München ‘72</h3>
-                                            <img mc:edit width="300" src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img">
+
+										
+                                            <img mc:edit width="350" src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img">
+											
+
+
                                             <table width="100">
                                                 <tr>
                                                     <!-- <td height="20">&nbsp;</td> -->
                                                 </tr>
                                             </table>
+
                                             <p mc:hideable mc:edit class="email__block-category">Austellung</p>
 											<p mc:hideable mc:edit class="email__block-meta">23.02.23, 19:30 Uhr<br>ICC Berlin<br></p>
                                             <p mc:hideable mc:edit class="email__block-desc">Das ICC Berlin ist ein Gesamt-kunstwerk. Eine gigantische Zeitkapsel, die seit fast einem Jahrzehnt auf ein neues Nutzungskonzept wartet.</p>
@@ -436,34 +513,36 @@
                                                     <!-- <td height="20">&nbsp;</td> -->
                                                 </tr>
                                             </table>
+
 											<table width="100">
                                                 <tr>
                                                     <td height="20">&nbsp;</td>
                                                 </tr>
                                             </table>
-											<table cellpadding="0" cellspacing="0" width="100%">
+
+											<table border="0" cellpadding="0" cellspacing="0" width="100" style="max-width: 1000px !important;; margin: 0 auto;">
                                                 <tr>
-                                                    <td class="email__content-buttons" align="left" left="24px">
+                                                    <td class="email__content-buttons" align="left" style="margin-left: 24px !important;">
 														<!--[if mso]>
-														<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.jovis.de/de/publisher/about-us" style="height:60px; width: 250px; v-text-anchor:middle;width:auto; padding:10px 10px 10px 10px;" arcsize="50%" strokecolor="#1C1C21" fillcolor="#DFC5C6">
+														<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.jovis.de/de/publisher/about-us" style="height:60px; width: 250px; v-text-anchor:middle;width:auto; padding:10px 10px 10px 10px;margin-left: 24px !important;" arcsize="50%" strokecolor="#1C1C21" fillcolor="#DFC5C6">
 															<w:anchorlock/>
 															<center style="color:#1C1C21;font-family:'Courier New', Courier, monospace; font-size:16px;">
 																Alle Bücher
 														<![endif]-->
-														<a mc:edit class="roundButton roundButton--transparent" style="mso-hide:all;margin-left: 24px; margin-bottom: 16px !important; margin-right: -14px; " href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Mehr erfahren</a> 
+														<a mc:edit class="roundButton roundButton--transparent" style="mso-hide:all;margin-bottom: 16px !important; margin-right: 16px!important;" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Mehr erfahren</a> 
 														<!--[if mso]>
 															</center>
-														</v:roundrect>
+														</v:roundrect>&nbsp&nbsp
 														<![endif]-->
 
 														<!--[if mso]>
-														<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.jovis.de/de/publisher/about-us" style="height:60px; width: 250px; v-text-anchor:middle;width:auto; padding:10px 10px 10px 10px;" arcsize="50%" strokecolor="#1C1C21" fillcolor="#DFC5C6">
+														<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.jovis.de/de/publisher/about-us" style="height:60px; width: 250px; v-text-anchor:middle;width:auto; padding:10px 10px 10px 10px;margin-left: 24px !important;" arcsize="50%" strokecolor="#1C1C21" fillcolor="#DFC5C6">
 															<w:anchorlock/>
 															<center style="color:#1C1C21;font-family:'Courier New', Courier, monospace; font-size:16px;">
 																Alle Bücher
 														<![endif]-->
 														
-														<a mc:edit class="roundButton roundButton--transparent" style="mso-hide:all; margin-left: 24px;" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Jetzt anmelden</a>
+														<a mc:edit class="roundButton roundButton--transparent" style="mso-hide:all;" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC">Jetzt anmelden</a>
 														<!--[if mso]>
 															</center>
 														</v:roundrect>
@@ -482,33 +561,41 @@
                                         </td>
                                     </tr>
                                 </table>
-                                <table mc:repeatable="content-katalog" class="email__block email__block--yellow email__block--centered" width="100">
+                                <table mc:repeatable="content-katalog" class="email__block email__block--yellow email__block--centered" border="0" cellpadding="0" cellspacing="0" width="100" style="max-width: 1000px !important;; margin: 0 auto;">
                                     <tr>
                                         <td align="center">
+
                                             <table width="100">
                                                 <tr>
                                                     <td height="20">&nbsp;</td>
                                                 </tr>
                                             </table>
+
                                             <h3 mc:edit="h3" class="email__block-title--big">Unser neuer Katalog<br>Frühjahr 2024 ist da!</h3>
+
                                             <table width="100">
                                                 <tr>
                                                     <td height="20">&nbsp;</td>
                                                 </tr>
                                             </table>
-                                            <img mc:edit width="300" src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img">
+
+                                            <img mc:edit width="350" src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img">
+
                                             <table width="100">
                                                 <tr>
                                                     <td height="20">&nbsp;</td>
                                                 </tr>
                                             </table>
+
                                             <p mc:edit mc:hideable style="text-align: center" class="email__block-meta">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+
 											<table width="100">
                                                 <tr>
                                                     <td height="20">&nbsp;</td>
                                                 </tr>
                                             </table>
-											<table cellpadding="0" cellspacing="0" width="100%" >
+
+											<table border="0" cellpadding="0" cellspacing="0" width="100" style="max-width: 1000px !important;; margin: 0 auto;">
                                                 <tr>
                                                     <td class="email__content-buttons" align="center">
 														<!--[if mso]>
@@ -546,15 +633,21 @@
                                                 </tr>
                                             </table>
                                             <h3 mc:edit="h3" class="email__block-title--big">Neue Rezension</h3>
-                                            <img mc:edit width="300" src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img">
+
+											
+                                            <img mc:edit width="350" src="https://mcusercontent.com/90b3c7daf4b9e441a023d789f/images/f3b36a48-c96c-65d6-d8b3-ca5e40aaface.png" alt="Book Cover" class="email__block-img">
+											
+
                                             <table width="100">
                                                 <tr>
                                                     <td height="20">&nbsp;</td>
                                                 </tr>
                                             </table>
+
                                             <h3 mc:edit style="text-align: center" class="email__block-title--small">Olympia München ‘72</h3>
                                             <p mc:edit style="text-align: center" class="email__block-meta">»Es gibt viel zu lesen, viele Fotos und Pläne sowie einen wissenschaftlich fundierten Werkkatalog. Am schönsten sind ...«<br>
 											<i>Gregor Harbusch in BauNetz</i></p>
+
 											<table width="100">
                                                 <tr>
                                                     <td height="20">&nbsp;</td>
@@ -573,12 +666,13 @@
 														<a mc:edit class="roundButton roundButton--transparent" href="https://www.jovis.de/de/books?page=0&pageSize=12&sortBy=date&sortOrder=DESC" target="_blank" style="mso-hide:all;margin: 0 auto !important;">Jetzt kaufen</a>
 														<!--[if mso]>
 															</center>
-														</v:roundrect>
+														</v:roundrect>&nbsp&nbsp
 														<![endif]-->
 														
 													</td>
                                                 </tr>
                                             </table>
+
 											<table width="100">
 												<tr>
 													<td height="80">&nbsp;</td>
@@ -592,13 +686,16 @@
                             </td>
                         </tr>
                     </table>
-                    <!-- Footer -->
+
+                    <!-- Footer Section -->
                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="email__footer" style="max-width: 1000px; margin: 0 auto;">
+
                         <tr>
                             <td class="universalSpacer universalSpacer--small" style="padding-top: 20px;" height="20">&nbsp;</td>
                         </tr>
+
                         <tr>
-							<td class="email__footer-buttons" align="center" style="padding: 5px !important; margin: 5px !important;">
+							<td class="email__footer-buttons" align="center" style="padding: 5px !important; margin: 0px !important;">
 								<!--[if mso]>
 								<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.jovis.de/de/publisher/about-us" style="height:60px; width: 250px; v-text-anchor:middle;width:auto; padding:10px 10px 10px 10px;" arcsize="50%" strokecolor="#1C1C21" fillcolor="#f2f2f2">
 									<w:anchorlock/>
@@ -610,7 +707,7 @@
 								</a>
 								<!--[if mso]>
 									</center>
-								</v:roundrect>
+								</v:roundrect>&nbsp
 								<![endif]-->
 							
 								<!--[if mso]>
@@ -624,7 +721,7 @@
 								</a>
 								<!--[if mso]>
 									</center>
-								</v:roundrect>
+								</v:roundrect>&nbsp
 								<![endif]-->
 							
 								<!--[if mso]>
@@ -638,7 +735,7 @@
 								</a>
 								<!--[if mso]>
 									</center>
-								</v:roundrect>
+								</v:roundrect>&nbsp
 								<![endif]-->
 							
 								<!--[if mso]>
@@ -652,9 +749,9 @@
 								</a>
 								<!--[if mso]>
 									</center>
-								</v:roundrect>
+								</v:roundrect>&nbsp
 								<![endif]-->
-								
+
 							</td>
 						</tr>
                         <tr>
@@ -678,7 +775,7 @@
 
 								<table width="100">
 									<tr>
-										<td height="60">&nbsp;</td>
+										<td height="80">&nbsp;</td>
 									</tr>
 								</table>
                             </td>
